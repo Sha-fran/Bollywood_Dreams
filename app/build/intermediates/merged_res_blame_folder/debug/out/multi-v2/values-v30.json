@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.bollywood.dreacas.app-mergeDebugResources-33:/values-v30/values-v30.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\levit\\AndroidStudioProjects\\ExampleFromAPIBrothers\\app\\src\\main\\res\\values-v30\\themes.xml",
+                    "from": {
+                        "startLines": "2,16",
+                        "startColumns": "4,4",
+                        "startOffsets": "100,818",
+                        "endLines": "14,21",
+                        "endColumns": "12,12",
+                        "endOffsets": "812,1085"
+                    },
+                    "to": {
+                        "startLines": "2,15",
+                        "startColumns": "4,4",
+                        "startOffsets": "100,694",
+                        "endLines": "14,20",
+                        "endColumns": "12,12",
+                        "endOffsets": "689,961"
+                    }
+                }
+            ]
+        }
+    ]
+}

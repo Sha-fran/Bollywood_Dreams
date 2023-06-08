@@ -1,0 +1,645 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.bollywood.dreacas"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+11-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:5:5-79
+11-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:5:22-76
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:6:5-67
+12-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:6:22-64
+13
+14    <!-- Create a unique permission for your app and use it so only your app can receive your OneSignal messages. -->
+15    <permission
+15-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:7:5-9:47
+16        android:name="com.bollywood.dreacas.permission.C2D_MESSAGE"
+16-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:8:9-63
+17        android:protectionLevel="signature" />
+17-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:9:9-44
+18
+19    <uses-permission android:name="com.bollywood.dreacas.permission.C2D_MESSAGE" /> <!-- OneSignal SDK has runtime checks Android version. -->
+19-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:11:5-79
+19-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:11:22-76
+20    <!-- <uses-sdk tools:overrideLibrary="android.support.customtabs"/> -->
+21    <!-- Required runtime permission to display notifications on Android 13 -->
+22    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- c2dm RECEIVE are basic requirements for push messages through Google's FCM -->
+22-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:16:5-77
+22-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:16:22-74
+23    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- Required, makes sure notifications are delivered on time. -->
+23-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:18:5-82
+23-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:18:22-79
+24    <uses-permission android:name="android.permission.WAKE_LOCK" />
+24-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:19:5-68
+24-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:19:22-65
+25    <!--
+26 Required so the device vibrates on receiving a push notification.
+27         Vibration settings of the device still apply.
+28    -->
+29    <uses-permission android:name="android.permission.VIBRATE" />
+29-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:24:5-66
+29-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:24:22-63
+30    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+30-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:25:5-79
+30-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:25:22-76
+31    <!--
+32 Use to restore notifications the user hasn't interacted with.
+33         They could be missed notifications if the user reboots their device if this isn't in place.
+34    -->
+35    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- START: ShortcutBadger -->
+35-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:30:5-81
+35-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:30:22-78
+36    <!-- Samsung -->
+37    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+37-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:32:5-86
+37-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:32:22-83
+38    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- HTC -->
+38-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:33:5-87
+38-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:33:22-84
+39    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+39-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:34:5-81
+39-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:34:22-78
+40    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- Sony -->
+40-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:35:5-83
+40-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:35:22-80
+41    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+41-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:36:5-88
+41-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:36:22-85
+42    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- Apex -->
+42-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:37:5-92
+42-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:37:22-89
+43    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- Solid -->
+43-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:38:5-84
+43-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:38:22-81
+44    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- Huawei -->
+44-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:39:5-83
+44-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:39:22-80
+45    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+45-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:40:5-91
+45-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:40:22-88
+46    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+46-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:41:5-92
+46-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:41:22-89
+47    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- ZUK -->
+47-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:42:5-93
+47-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:42:22-90
+48    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- OPPO -->
+48-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:43:5-73
+48-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:43:22-70
+49    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+49-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:44:5-82
+49-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:44:22-79
+50    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- EvMe -->
+50-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:45:5-83
+50-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:45:22-80
+51    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+51-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:46:5-88
+51-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:46:22-85
+52    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+52-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:47:5-89
+52-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:47:22-86
+53    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+53-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:28:5-77
+53-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:28:22-74
+54
+55    <application
+55-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:8:5-47:19
+56        android:allowBackup="true"
+56-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:9:9-35
+57        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+57-->[androidx.core:core:1.8.0] C:\Users\levit\.gradle\caches\transforms-3\5dc9d6df3604458e85d3806a4852730e\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+58        android:debuggable="true"
+59        android:icon="@mipmap/ic_launcher"
+59-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:10:9-43
+60        android:label="@string/app_name"
+60-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:11:9-41
+61        android:supportsRtl="true"
+61-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:12:9-35
+62        android:testOnly="true"
+63        android:theme="@style/Theme.App.NoActionBar"
+63-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:13:9-53
+64        android:usesCleartextTraffic="true" >
+64-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:14:9-44
+65        <activity
+65-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:15:9-17:40
+66            android:name="com.bollywood.dreacas.FirstGameChoiceActivity"
+66-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:16:13-52
+67            android:exported="false" />
+67-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:17:13-37
+68        <activity
+68-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:18:9-20:40
+69            android:name="com.bollywood.dreacas.GameOneActivity"
+69-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:19:13-44
+70            android:exported="false" />
+70-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:20:13-37
+71        <activity
+71-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:21:9-23:40
+72            android:name="com.bollywood.dreacas.ChoiceActivity"
+72-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:22:13-43
+73            android:exported="false" />
+73-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:23:13-37
+74        <activity
+74-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:24:9-26:40
+75            android:name="com.bollywood.dreacas.PutEmailActivity"
+75-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:25:13-45
+76            android:exported="false" />
+76-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:26:13-37
+77        <activity
+77-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:27:9-29:52
+78            android:name="com.bollywood.dreacas.YourActivity"
+78-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:28:13-41
+79            android:screenOrientation="portrait" />
+79-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:29:13-49
+80        <activity
+80-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:30:9-46:20
+81            android:name="com.bollywood.dreacas.SplashActivity"
+81-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:31:13-43
+82            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+82-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:32:13-122
+83            android:exported="true"
+83-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:33:13-36
+84            android:windowSoftInputMode="adjustResize" >
+84-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:34:13-55
+85            <intent-filter>
+85-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:35:13-39:29
+86                <action android:name="android.intent.action.MAIN" />
+86-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:36:17-69
+86-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:36:25-66
+87
+88                <category android:name="android.intent.category.LAUNCHER" />
+88-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:38:17-77
+88-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:38:27-74
+89            </intent-filter>
+90            <intent-filter>
+90-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:40:13-45:29
+91                <action android:name="android.intent.action.VIEW" />
+91-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:41:17-69
+91-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:41:25-66
+92
+93                <category android:name="android.intent.category.DEFAULT" />
+93-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:43:17-76
+93-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:43:27-73
+94                <category android:name="android.intent.category.BROWSABLE" />
+94-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:44:17-78
+94-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:44:27-75
+95            </intent-filter>
+96        </activity>
+97
+98        <receiver
+98-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:50:9-61:20
+99            android:name="com.onesignal.FCMBroadcastReceiver"
+99-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:51:13-62
+100            android:exported="true"
+100-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:52:13-36
+101            android:permission="com.google.android.c2dm.permission.SEND" >
+101-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:53:13-73
+102
+103            <!-- High priority so OneSignal payloads can be filtered from other FCM receivers -->
+104            <intent-filter android:priority="999" >
+104-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:56:13-60:29
+104-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:56:28-50
+105                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+105-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:57:17-81
+105-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:57:25-78
+106
+107                <category android:name="com.bollywood.dreacas" />
+107-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:59:17-61
+107-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:59:27-58
+108            </intent-filter>
+109        </receiver>
+110
+111        <service
+111-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:63:9-69:19
+112            android:name="com.onesignal.HmsMessageServiceOneSignal"
+112-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:64:13-68
+113            android:exported="false" >
+113-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:65:13-37
+114            <intent-filter>
+114-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:66:13-68:29
+115                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+115-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:67:17-81
+115-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:67:25-78
+116            </intent-filter>
+117        </service>
+118
+119        <activity
+119-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:71:9-79:20
+120            android:name="com.onesignal.NotificationOpenedActivityHMS"
+120-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:72:13-71
+121            android:exported="true"
+121-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:73:13-36
+122            android:noHistory="true"
+122-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:74:13-37
+123            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+123-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:75:13-72
+124            <intent-filter>
+124-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:76:13-78:29
+125                <action android:name="android.intent.action.VIEW" />
+125-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:41:17-69
+125-->C:\Users\levit\AndroidStudioProjects\ExampleFromAPIBrothers\app\src\main\AndroidManifest.xml:41:25-66
+126            </intent-filter>
+127        </activity>
+128
+129        <service
+129-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:81:9-83:40
+130            android:name="com.onesignal.FCMIntentService"
+130-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:82:13-58
+131            android:exported="false" />
+131-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:83:13-37
+132        <service
+132-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:84:9-87:72
+133            android:name="com.onesignal.FCMIntentJobService"
+133-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:85:13-61
+134            android:exported="false"
+134-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:86:13-37
+135            android:permission="android.permission.BIND_JOB_SERVICE" />
+135-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:87:13-69
+136        <service
+136-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:88:9-91:43
+137            android:name="com.onesignal.SyncService"
+137-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:89:13-53
+138            android:exported="false"
+138-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:90:13-37
+139            android:stopWithTask="true" />
+139-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:91:13-40
+140        <service
+140-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:92:9-95:72
+141            android:name="com.onesignal.SyncJobService"
+141-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:93:13-56
+142            android:exported="false"
+142-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:94:13-37
+143            android:permission="android.permission.BIND_JOB_SERVICE" />
+143-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:95:13-69
+144
+145        <activity
+145-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:97:9-100:75
+146            android:name="com.onesignal.PermissionsActivity"
+146-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:98:13-61
+147            android:exported="false"
+147-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:99:13-37
+148            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+148-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:100:13-72
+149
+150        <receiver
+150-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:102:9-104:39
+151            android:name="com.onesignal.NotificationDismissReceiver"
+151-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:103:13-69
+152            android:exported="true" />
+152-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:104:13-36
+153        <receiver
+153-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:105:9-112:20
+154            android:name="com.onesignal.BootUpReceiver"
+154-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:106:13-56
+155            android:exported="true" >
+155-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:107:13-36
+156            <intent-filter>
+156-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:108:13-111:29
+157                <action android:name="android.intent.action.BOOT_COMPLETED" />
+157-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:109:17-79
+157-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:109:25-76
+158                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+158-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:110:17-82
+158-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:110:25-79
+159            </intent-filter>
+160        </receiver>
+161        <receiver
+161-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:113:9-119:20
+162            android:name="com.onesignal.UpgradeReceiver"
+162-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:114:13-57
+163            android:exported="true" >
+163-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:115:13-36
+164            <intent-filter>
+164-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:116:13-118:29
+165                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+165-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:117:17-84
+165-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:117:25-81
+166            </intent-filter>
+167        </receiver>
+168
+169        <activity
+169-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:121:9-127:75
+170            android:name="com.onesignal.NotificationOpenedReceiver"
+170-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:122:13-68
+171            android:excludeFromRecents="true"
+171-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:123:13-46
+172            android:exported="true"
+172-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:124:13-36
+173            android:noHistory="true"
+173-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:125:13-37
+174            android:taskAffinity=""
+174-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:126:13-36
+175            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+175-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:127:13-72
+176        <activity
+176-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:128:9-133:75
+177            android:name="com.onesignal.NotificationOpenedReceiverAndroid22AndOlder"
+177-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:129:13-85
+178            android:excludeFromRecents="true"
+178-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:130:13-46
+179            android:exported="true"
+179-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:131:13-36
+180            android:noHistory="true"
+180-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:132:13-37
+181            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+181-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:133:13-72
+182        <!--
+183             FirebaseMessagingService performs security checks at runtime,
+184             but set to not exported to explicitly avoid allowing another app to call it.
+185        -->
+186        <service
+186-->[com.google.firebase:firebase-messaging:19.0.0] C:\Users\levit\.gradle\caches\transforms-3\596ca88f57a539c456cbd4611af2c6c1\transformed\jetified-firebase-messaging-19.0.0\AndroidManifest.xml:28:9-34:19
+187            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+187-->[com.google.firebase:firebase-messaging:19.0.0] C:\Users\levit\.gradle\caches\transforms-3\596ca88f57a539c456cbd4611af2c6c1\transformed\jetified-firebase-messaging-19.0.0\AndroidManifest.xml:29:13-82
+188            android:exported="false" >
+188-->[com.google.firebase:firebase-messaging:19.0.0] C:\Users\levit\.gradle\caches\transforms-3\596ca88f57a539c456cbd4611af2c6c1\transformed\jetified-firebase-messaging-19.0.0\AndroidManifest.xml:30:13-37
+189            <intent-filter android:priority="-500" >
+189-->[com.google.firebase:firebase-messaging:19.0.0] C:\Users\levit\.gradle\caches\transforms-3\596ca88f57a539c456cbd4611af2c6c1\transformed\jetified-firebase-messaging-19.0.0\AndroidManifest.xml:31:13-33:29
+189-->[com.google.firebase:firebase-messaging:19.0.0] C:\Users\levit\.gradle\caches\transforms-3\596ca88f57a539c456cbd4611af2c6c1\transformed\jetified-firebase-messaging-19.0.0\AndroidManifest.xml:31:28-51
+190                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+190-->[com.google.firebase:firebase-messaging:19.0.0] C:\Users\levit\.gradle\caches\transforms-3\596ca88f57a539c456cbd4611af2c6c1\transformed\jetified-firebase-messaging-19.0.0\AndroidManifest.xml:32:17-78
+190-->[com.google.firebase:firebase-messaging:19.0.0] C:\Users\levit\.gradle\caches\transforms-3\596ca88f57a539c456cbd4611af2c6c1\transformed\jetified-firebase-messaging-19.0.0\AndroidManifest.xml:32:25-75
+191            </intent-filter>
+192        </service>
+193        <service
+193-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\levit\.gradle\caches\transforms-3\4dc76597f78964ebc1ae02b465458597\transformed\jetified-firebase-iid-19.0.0\AndroidManifest.xml:29:9-35:19
+194            android:name="com.google.firebase.components.ComponentDiscoveryService"
+194-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\levit\.gradle\caches\transforms-3\4dc76597f78964ebc1ae02b465458597\transformed\jetified-firebase-iid-19.0.0\AndroidManifest.xml:30:13-84
+195            android:exported="false" >
+195-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\levit\.gradle\caches\transforms-3\4dc76597f78964ebc1ae02b465458597\transformed\jetified-firebase-iid-19.0.0\AndroidManifest.xml:31:13-37
+196            <meta-data
+196-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\levit\.gradle\caches\transforms-3\4dc76597f78964ebc1ae02b465458597\transformed\jetified-firebase-iid-19.0.0\AndroidManifest.xml:32:13-34:85
+197                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+197-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\levit\.gradle\caches\transforms-3\4dc76597f78964ebc1ae02b465458597\transformed\jetified-firebase-iid-19.0.0\AndroidManifest.xml:33:17-96
+198                android:value="com.google.firebase.components.ComponentRegistrar" />
+198-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\levit\.gradle\caches\transforms-3\4dc76597f78964ebc1ae02b465458597\transformed\jetified-firebase-iid-19.0.0\AndroidManifest.xml:34:17-82
+199        </service>
+200
+201        <receiver
+201-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\levit\.gradle\caches\transforms-3\4dc76597f78964ebc1ae02b465458597\transformed\jetified-firebase-iid-19.0.0\AndroidManifest.xml:37:9-44:20
+202            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+202-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\levit\.gradle\caches\transforms-3\4dc76597f78964ebc1ae02b465458597\transformed\jetified-firebase-iid-19.0.0\AndroidManifest.xml:38:13-78
+203            android:exported="true"
+203-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\levit\.gradle\caches\transforms-3\4dc76597f78964ebc1ae02b465458597\transformed\jetified-firebase-iid-19.0.0\AndroidManifest.xml:39:13-36
+204            android:permission="com.google.android.c2dm.permission.SEND" >
+204-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\levit\.gradle\caches\transforms-3\4dc76597f78964ebc1ae02b465458597\transformed\jetified-firebase-iid-19.0.0\AndroidManifest.xml:40:13-73
+205            <intent-filter>
+205-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\levit\.gradle\caches\transforms-3\4dc76597f78964ebc1ae02b465458597\transformed\jetified-firebase-iid-19.0.0\AndroidManifest.xml:41:13-43:29
+206                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+206-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:57:17-81
+206-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:57:25-78
+207            </intent-filter>
+208        </receiver>
+209
+210        <activity
+210-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\levit\.gradle\caches\transforms-3\c4560ca6cc01f23bbb05a54b4d28d4d2\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+211            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+211-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\levit\.gradle\caches\transforms-3\c4560ca6cc01f23bbb05a54b4d28d4d2\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+212            android:exported="false"
+212-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\levit\.gradle\caches\transforms-3\c4560ca6cc01f23bbb05a54b4d28d4d2\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+213            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+213-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\levit\.gradle\caches\transforms-3\c4560ca6cc01f23bbb05a54b4d28d4d2\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+214
+215        <provider
+215-->[com.google.firebase:firebase-common:18.0.0] C:\Users\levit\.gradle\caches\transforms-3\d57a3bd2e2048d8bb2abd8ae4e3165f0\transformed\jetified-firebase-common-18.0.0\AndroidManifest.xml:12:9-16:39
+216            android:name="com.google.firebase.provider.FirebaseInitProvider"
+216-->[com.google.firebase:firebase-common:18.0.0] C:\Users\levit\.gradle\caches\transforms-3\d57a3bd2e2048d8bb2abd8ae4e3165f0\transformed\jetified-firebase-common-18.0.0\AndroidManifest.xml:13:13-77
+217            android:authorities="com.bollywood.dreacas.firebaseinitprovider"
+217-->[com.google.firebase:firebase-common:18.0.0] C:\Users\levit\.gradle\caches\transforms-3\d57a3bd2e2048d8bb2abd8ae4e3165f0\transformed\jetified-firebase-common-18.0.0\AndroidManifest.xml:14:13-72
+218            android:exported="false"
+218-->[com.google.firebase:firebase-common:18.0.0] C:\Users\levit\.gradle\caches\transforms-3\d57a3bd2e2048d8bb2abd8ae4e3165f0\transformed\jetified-firebase-common-18.0.0\AndroidManifest.xml:15:13-37
+219            android:initOrder="100" />
+219-->[com.google.firebase:firebase-common:18.0.0] C:\Users\levit\.gradle\caches\transforms-3\d57a3bd2e2048d8bb2abd8ae4e3165f0\transformed\jetified-firebase-common-18.0.0\AndroidManifest.xml:16:13-36
+220
+221        <meta-data
+221-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\levit\.gradle\caches\transforms-3\8dd8caa56061fc98e0f9fe8e7b6ece37\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+222            android:name="com.google.android.gms.version"
+222-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\levit\.gradle\caches\transforms-3\8dd8caa56061fc98e0f9fe8e7b6ece37\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+223            android:value="@integer/google_play_services_version" />
+223-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\levit\.gradle\caches\transforms-3\8dd8caa56061fc98e0f9fe8e7b6ece37\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+224
+225        <provider
+225-->[androidx.emoji2:emoji2:1.2.0] C:\Users\levit\.gradle\caches\transforms-3\f0ec9b74923eda6fb1fa84365e09cff1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+226            android:name="androidx.startup.InitializationProvider"
+226-->[androidx.emoji2:emoji2:1.2.0] C:\Users\levit\.gradle\caches\transforms-3\f0ec9b74923eda6fb1fa84365e09cff1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+227            android:authorities="com.bollywood.dreacas.androidx-startup"
+227-->[androidx.emoji2:emoji2:1.2.0] C:\Users\levit\.gradle\caches\transforms-3\f0ec9b74923eda6fb1fa84365e09cff1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+228            android:exported="false" >
+228-->[androidx.emoji2:emoji2:1.2.0] C:\Users\levit\.gradle\caches\transforms-3\f0ec9b74923eda6fb1fa84365e09cff1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+229            <meta-data
+229-->[androidx.emoji2:emoji2:1.2.0] C:\Users\levit\.gradle\caches\transforms-3\f0ec9b74923eda6fb1fa84365e09cff1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+230                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+230-->[androidx.emoji2:emoji2:1.2.0] C:\Users\levit\.gradle\caches\transforms-3\f0ec9b74923eda6fb1fa84365e09cff1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+231                android:value="androidx.startup" />
+231-->[androidx.emoji2:emoji2:1.2.0] C:\Users\levit\.gradle\caches\transforms-3\f0ec9b74923eda6fb1fa84365e09cff1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+232            <meta-data
+232-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:36:13-38:52
+233                android:name="androidx.work.WorkManagerInitializer"
+233-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:37:17-68
+234                android:value="androidx.startup" />
+234-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:38:17-49
+235            <meta-data
+235-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\levit\.gradle\caches\transforms-3\4960c254f54a8c64d01e212f4d6f0556\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+236                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+236-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\levit\.gradle\caches\transforms-3\4960c254f54a8c64d01e212f4d6f0556\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+237                android:value="androidx.startup" />
+237-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\levit\.gradle\caches\transforms-3\4960c254f54a8c64d01e212f4d6f0556\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+238        </provider>
+239
+240        <service
+240-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:41:9-46:35
+241            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+241-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:42:13-88
+242            android:directBootAware="false"
+242-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:43:13-44
+243            android:enabled="@bool/enable_system_alarm_service_default"
+243-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:44:13-72
+244            android:exported="false" />
+244-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:45:13-37
+245        <service
+245-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:47:9-53:35
+246            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+246-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:48:13-84
+247            android:directBootAware="false"
+247-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:49:13-44
+248            android:enabled="@bool/enable_system_job_service_default"
+248-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:50:13-70
+249            android:exported="true"
+249-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:51:13-36
+250            android:permission="android.permission.BIND_JOB_SERVICE" />
+250-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:52:13-69
+251        <service
+251-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:54:9-59:35
+252            android:name="androidx.work.impl.foreground.SystemForegroundService"
+252-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:55:13-81
+253            android:directBootAware="false"
+253-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:56:13-44
+254            android:enabled="@bool/enable_system_foreground_service_default"
+254-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:57:13-77
+255            android:exported="false" />
+255-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:58:13-37
+256
+257        <receiver
+257-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:61:9-66:35
+258            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+258-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:62:13-88
+259            android:directBootAware="false"
+259-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:63:13-44
+260            android:enabled="true"
+260-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:64:13-35
+261            android:exported="false" />
+261-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:65:13-37
+262        <receiver
+262-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:67:9-77:20
+263            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+263-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:68:13-106
+264            android:directBootAware="false"
+264-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:69:13-44
+265            android:enabled="false"
+265-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:70:13-36
+266            android:exported="false" >
+266-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:71:13-37
+267            <intent-filter>
+267-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:73:13-76:29
+268                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+268-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:74:17-87
+268-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:74:25-84
+269                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+269-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:75:17-90
+269-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:75:25-87
+270            </intent-filter>
+271        </receiver>
+272        <receiver
+272-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:78:9-88:20
+273            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+273-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:79:13-104
+274            android:directBootAware="false"
+274-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:80:13-44
+275            android:enabled="false"
+275-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:81:13-36
+276            android:exported="false" >
+276-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:82:13-37
+277            <intent-filter>
+277-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:84:13-87:29
+278                <action android:name="android.intent.action.BATTERY_OKAY" />
+278-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:85:17-77
+278-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:85:25-74
+279                <action android:name="android.intent.action.BATTERY_LOW" />
+279-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:86:17-76
+279-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:86:25-73
+280            </intent-filter>
+281        </receiver>
+282        <receiver
+282-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:89:9-99:20
+283            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+283-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:90:13-104
+284            android:directBootAware="false"
+284-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:91:13-44
+285            android:enabled="false"
+285-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:92:13-36
+286            android:exported="false" >
+286-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:93:13-37
+287            <intent-filter>
+287-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:95:13-98:29
+288                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+288-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:96:17-83
+288-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:96:25-80
+289                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+289-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:97:17-82
+289-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:97:25-79
+290            </intent-filter>
+291        </receiver>
+292        <receiver
+292-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:100:9-109:20
+293            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+293-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:101:13-103
+294            android:directBootAware="false"
+294-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:102:13-44
+295            android:enabled="false"
+295-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:103:13-36
+296            android:exported="false" >
+296-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:104:13-37
+297            <intent-filter>
+297-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:106:13-108:29
+298                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+298-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:107:17-79
+298-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:107:25-76
+299            </intent-filter>
+300        </receiver>
+301        <receiver
+301-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:110:9-121:20
+302            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+302-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:111:13-88
+303            android:directBootAware="false"
+303-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:112:13-44
+304            android:enabled="false"
+304-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:113:13-36
+305            android:exported="false" >
+305-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:114:13-37
+306            <intent-filter>
+306-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:116:13-120:29
+307                <action android:name="android.intent.action.BOOT_COMPLETED" />
+307-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:109:17-79
+307-->[com.onesignal:OneSignal:4.8.6] C:\Users\levit\.gradle\caches\transforms-3\3a6c7ac0c651f1861609a678362957fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:109:25-76
+308                <action android:name="android.intent.action.TIME_SET" />
+308-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:118:17-73
+308-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:118:25-70
+309                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+309-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:119:17-81
+309-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:119:25-78
+310            </intent-filter>
+311        </receiver>
+312        <receiver
+312-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:122:9-131:20
+313            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+313-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:123:13-99
+314            android:directBootAware="false"
+314-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:124:13-44
+315            android:enabled="@bool/enable_system_alarm_service_default"
+315-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:125:13-72
+316            android:exported="false" >
+316-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:126:13-37
+317            <intent-filter>
+317-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:128:13-130:29
+318                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+318-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:129:17-98
+318-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:129:25-95
+319            </intent-filter>
+320        </receiver>
+321        <receiver
+321-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:132:9-142:20
+322            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+322-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:133:13-78
+323            android:directBootAware="false"
+323-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:134:13-44
+324            android:enabled="true"
+324-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:135:13-35
+325            android:exported="true"
+325-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:136:13-36
+326            android:permission="android.permission.DUMP" >
+326-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:137:13-57
+327            <intent-filter>
+327-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:139:13-141:29
+328                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+328-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:140:17-88
+328-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:140:25-85
+329            </intent-filter>
+330        </receiver>
+331
+332        <service
+332-->[androidx.room:room-runtime:2.2.5] C:\Users\levit\.gradle\caches\transforms-3\4addac02cc0a881ebab6db1c5cc74f8c\transformed\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
+333            android:name="androidx.room.MultiInstanceInvalidationService"
+333-->[androidx.room:room-runtime:2.2.5] C:\Users\levit\.gradle\caches\transforms-3\4addac02cc0a881ebab6db1c5cc74f8c\transformed\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
+334            android:directBootAware="true"
+334-->[androidx.room:room-runtime:2.2.5] C:\Users\levit\.gradle\caches\transforms-3\4addac02cc0a881ebab6db1c5cc74f8c\transformed\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
+335            android:exported="false" />
+335-->[androidx.room:room-runtime:2.2.5] C:\Users\levit\.gradle\caches\transforms-3\4addac02cc0a881ebab6db1c5cc74f8c\transformed\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
+336    </application>
+337
+338</manifest>
