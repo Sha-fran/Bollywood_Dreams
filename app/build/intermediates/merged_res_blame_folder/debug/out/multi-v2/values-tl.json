@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.bollywood.dreacas.app-mergeDebugResources-33:/values-tl/values-tl.xml",
+            "outputFile": "com.bollywood.dreacas.app-mergeDebugResources-36:/values-tl/values-tl.xml",
             "map": [
                 {
                     "source": "C:\\Users\\levit\\.gradle\\caches\\transforms-3\\c4560ca6cc01f23bbb05a54b4d28d4d2\\transformed\\jetified-play-services-base-17.0.0\\res\\values-tl\\values.xml",

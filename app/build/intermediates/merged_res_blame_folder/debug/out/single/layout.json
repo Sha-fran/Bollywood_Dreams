@@ -1,46 +1,30 @@
 [
     {
-        "merged": "C:\\Users\\levit\\.gradle\\daemon\\7.5\\com.bollywood.dreacas.app-mergeDebugResources-34:\\layout\\activity_game_choice1.xml",
-        "source": "C:\\Users\\levit\\.gradle\\daemon\\7.5\\com.bollywood.dreacas.app-main-37:\\layout\\activity_game_choice1.xml"
+        "merged": "com.bollywood.dreacas.app-mergeDebugResources-37:/layout/activity_put_email.xml",
+        "source": "com.bollywood.dreacas.app-main-40:/layout/activity_put_email.xml"
     },
     {
-        "merged": "C:\\Users\\levit\\.gradle\\daemon\\7.5\\com.bollywood.dreacas.app-mergeDebugResources-34:\\layout\\activity_put_email.xml",
-        "source": "C:\\Users\\levit\\.gradle\\daemon\\7.5\\com.bollywood.dreacas.app-main-37:\\layout\\activity_put_email.xml"
+        "merged": "com.bollywood.dreacas.app-mergeDebugResources-37:/layout/scroll_item.xml",
+        "source": "com.bollywood.dreacas.app-main-40:/layout/scroll_item.xml"
     },
     {
-        "merged": "C:\\Users\\levit\\.gradle\\daemon\\7.5\\com.bollywood.dreacas.app-mergeDebugResources-34:\\layout\\activity_splash.xml",
-        "source": "C:\\Users\\levit\\.gradle\\daemon\\7.5\\com.bollywood.dreacas.app-main-37:\\layout\\activity_splash.xml"
+        "merged": "com.bollywood.dreacas.app-mergeDebugResources-37:/layout/activity_game_one.xml",
+        "source": "com.bollywood.dreacas.app-main-40:/layout/activity_game_one.xml"
     },
     {
-        "merged": "C:\\Users\\levit\\.gradle\\daemon\\7.5\\com.bollywood.dreacas.app-mergeDebugResources-34:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\levit\\.gradle\\daemon\\7.5\\com.bollywood.dreacas.app-main-37:\\layout\\activity_main.xml"
+        "merged": "com.bollywood.dreacas.app-mergeDebugResources-37:/layout/activity_your.xml",
+        "source": "com.bollywood.dreacas.app-main-40:/layout/activity_your.xml"
     },
     {
-        "merged": "C:\\Users\\levit\\.gradle\\daemon\\7.5\\com.bollywood.dreacas.app-mergeDebugResources-34:\\layout\\scroll_item.xml",
-        "source": "C:\\Users\\levit\\.gradle\\daemon\\7.5\\com.bollywood.dreacas.app-main-37:\\layout\\scroll_item.xml"
+        "merged": "com.bollywood.dreacas.app-mergeDebugResources-37:/layout/activity_first_game_choice.xml",
+        "source": "com.bollywood.dreacas.app-main-40:/layout/activity_first_game_choice.xml"
     },
     {
-        "merged": "C:\\Users\\levit\\.gradle\\daemon\\7.5\\com.bollywood.dreacas.app-mergeDebugResources-34:\\layout\\activity_choice.xml",
-        "source": "C:\\Users\\levit\\.gradle\\daemon\\7.5\\com.bollywood.dreacas.app-main-37:\\layout\\activity_choice.xml"
+        "merged": "com.bollywood.dreacas.app-mergeDebugResources-37:/layout/activity_choice.xml",
+        "source": "com.bollywood.dreacas.app-main-40:/layout/activity_choice.xml"
     },
     {
-        "merged": "com.bollywood.dreacas.app-mergeDebugResources-34:/layout/activity_game_one.xml",
-        "source": "com.bollywood.dreacas.app-main-37:/layout/activity_game_one.xml"
-    },
-    {
-        "merged": "C:\\Users\\levit\\.gradle\\daemon\\7.5\\com.bollywood.dreacas.app-mergeDebugResources-34:\\layout\\activity_game_choice_one.xml",
-        "source": "C:\\Users\\levit\\.gradle\\daemon\\7.5\\com.bollywood.dreacas.app-main-37:\\layout\\activity_game_choice_one.xml"
-    },
-    {
-        "merged": "C:\\Users\\levit\\.gradle\\daemon\\7.5\\com.bollywood.dreacas.app-mergeDebugResources-34:\\layout\\activity_game_one.xml",
-        "source": "C:\\Users\\levit\\.gradle\\daemon\\7.5\\com.bollywood.dreacas.app-main-37:\\layout\\activity_game_one.xml"
-    },
-    {
-        "merged": "C:\\Users\\levit\\.gradle\\daemon\\7.5\\com.bollywood.dreacas.app-mergeDebugResources-34:\\layout\\activity_first_game_choice.xml",
-        "source": "C:\\Users\\levit\\.gradle\\daemon\\7.5\\com.bollywood.dreacas.app-main-37:\\layout\\activity_first_game_choice.xml"
-    },
-    {
-        "merged": "C:\\Users\\levit\\.gradle\\daemon\\7.5\\com.bollywood.dreacas.app-mergeDebugResources-34:\\layout\\activity_your.xml",
-        "source": "C:\\Users\\levit\\.gradle\\daemon\\7.5\\com.bollywood.dreacas.app-main-37:\\layout\\activity_your.xml"
+        "merged": "com.bollywood.dreacas.app-mergeDebugResources-37:/layout/activity_splash.xml",
+        "source": "com.bollywood.dreacas.app-main-40:/layout/activity_splash.xml"
     }
 ]

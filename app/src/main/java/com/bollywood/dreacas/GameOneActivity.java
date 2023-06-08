@@ -27,6 +27,9 @@ public class GameOneActivity extends AppCompatActivity {
     private int position2 = random.nextInt((max - min)) + 1 + min;
     private int position3 = random.nextInt((max - min)) + 1 + min;
 
+    private CalculatedDatabase calculatedDatabase;
+    private CalculationData calculationData = new CalculationData(1, balance, rate);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,6 +59,10 @@ public class GameOneActivity extends AppCompatActivity {
         binding.recyclerView2.smoothScrollToPosition(position2);
         binding.recyclerView3.smoothScrollToPosition(position3);
 
+        calculatedDatabase = CalculatedDatabase.getInstance(getApplication());
+
+        calculatedDatabase.calculationsDao().add(calculationData);
+
         binding.buttonSpin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -71,12 +78,20 @@ public class GameOneActivity extends AppCompatActivity {
 
                 if (index1 == index2 && index2 == index3) {
                     balance += rate * 5;
+                    calculationData.setBalance(balance);
+                    calculatedDatabase.calculationsDao().add(calculationData);
                 } else if (index1 == index2 || index2 == index3) {
                     balance += rate * 2;
+                    calculationData.setBalance(balance);
+                    calculatedDatabase.calculationsDao().add(calculationData);
                 } else {
                     balance -= rate;
+                    calculationData.setBalance(balance);
+                    calculatedDatabase.calculationsDao().add(calculationData);
+                    int balanceTest = calculatedDatabase.calculationsDao().getBalance();
+                    System.out.println(balanceTest);
                 }
-                binding.textBalanceG1.setText(String.valueOf(balance));
+                binding.balanceG1.setText(String.valueOf(calculatedDatabase.calculationsDao().getBalance()));
             }
         });
     }

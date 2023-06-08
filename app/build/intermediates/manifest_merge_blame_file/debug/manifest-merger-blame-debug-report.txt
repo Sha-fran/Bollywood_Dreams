@@ -425,25 +425,25 @@
 223-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\levit\.gradle\caches\transforms-3\8dd8caa56061fc98e0f9fe8e7b6ece37\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
 224
 225        <provider
-225-->[androidx.emoji2:emoji2:1.2.0] C:\Users\levit\.gradle\caches\transforms-3\f0ec9b74923eda6fb1fa84365e09cff1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+225-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:31:9-39:20
 226            android:name="androidx.startup.InitializationProvider"
-226-->[androidx.emoji2:emoji2:1.2.0] C:\Users\levit\.gradle\caches\transforms-3\f0ec9b74923eda6fb1fa84365e09cff1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+226-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:32:13-67
 227            android:authorities="com.bollywood.dreacas.androidx-startup"
-227-->[androidx.emoji2:emoji2:1.2.0] C:\Users\levit\.gradle\caches\transforms-3\f0ec9b74923eda6fb1fa84365e09cff1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+227-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:33:13-68
 228            android:exported="false" >
-228-->[androidx.emoji2:emoji2:1.2.0] C:\Users\levit\.gradle\caches\transforms-3\f0ec9b74923eda6fb1fa84365e09cff1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+228-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:34:13-37
 229            <meta-data
-229-->[androidx.emoji2:emoji2:1.2.0] C:\Users\levit\.gradle\caches\transforms-3\f0ec9b74923eda6fb1fa84365e09cff1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-230                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-230-->[androidx.emoji2:emoji2:1.2.0] C:\Users\levit\.gradle\caches\transforms-3\f0ec9b74923eda6fb1fa84365e09cff1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+229-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:36:13-38:52
+230                android:name="androidx.work.WorkManagerInitializer"
+230-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:37:17-68
 231                android:value="androidx.startup" />
-231-->[androidx.emoji2:emoji2:1.2.0] C:\Users\levit\.gradle\caches\transforms-3\f0ec9b74923eda6fb1fa84365e09cff1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+231-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:38:17-49
 232            <meta-data
-232-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:36:13-38:52
-233                android:name="androidx.work.WorkManagerInitializer"
-233-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:37:17-68
+232-->[androidx.emoji2:emoji2:1.2.0] C:\Users\levit\.gradle\caches\transforms-3\f0ec9b74923eda6fb1fa84365e09cff1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+233                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+233-->[androidx.emoji2:emoji2:1.2.0] C:\Users\levit\.gradle\caches\transforms-3\f0ec9b74923eda6fb1fa84365e09cff1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
 234                android:value="androidx.startup" />
-234-->[androidx.work:work-runtime:2.7.1] C:\Users\levit\.gradle\caches\transforms-3\a9047c9080acb93cb683b5ceeb3c6955\transformed\work-runtime-2.7.1\AndroidManifest.xml:38:17-49
+234-->[androidx.emoji2:emoji2:1.2.0] C:\Users\levit\.gradle\caches\transforms-3\f0ec9b74923eda6fb1fa84365e09cff1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
 235            <meta-data
 235-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\levit\.gradle\caches\transforms-3\4960c254f54a8c64d01e212f4d6f0556\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
 236                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
@@ -633,13 +633,13 @@
 330        </receiver>
 331
 332        <service
-332-->[androidx.room:room-runtime:2.2.5] C:\Users\levit\.gradle\caches\transforms-3\4addac02cc0a881ebab6db1c5cc74f8c\transformed\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
+332-->[androidx.room:room-runtime:2.5.1] C:\Users\levit\.gradle\caches\transforms-3\a1e946d6749f9450cfba0146caec68f9\transformed\room-runtime-2.5.1\AndroidManifest.xml:24:9-28:63
 333            android:name="androidx.room.MultiInstanceInvalidationService"
-333-->[androidx.room:room-runtime:2.2.5] C:\Users\levit\.gradle\caches\transforms-3\4addac02cc0a881ebab6db1c5cc74f8c\transformed\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
+333-->[androidx.room:room-runtime:2.5.1] C:\Users\levit\.gradle\caches\transforms-3\a1e946d6749f9450cfba0146caec68f9\transformed\room-runtime-2.5.1\AndroidManifest.xml:25:13-74
 334            android:directBootAware="true"
-334-->[androidx.room:room-runtime:2.2.5] C:\Users\levit\.gradle\caches\transforms-3\4addac02cc0a881ebab6db1c5cc74f8c\transformed\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
+334-->[androidx.room:room-runtime:2.5.1] C:\Users\levit\.gradle\caches\transforms-3\a1e946d6749f9450cfba0146caec68f9\transformed\room-runtime-2.5.1\AndroidManifest.xml:26:13-43
 335            android:exported="false" />
-335-->[androidx.room:room-runtime:2.2.5] C:\Users\levit\.gradle\caches\transforms-3\4addac02cc0a881ebab6db1c5cc74f8c\transformed\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
+335-->[androidx.room:room-runtime:2.5.1] C:\Users\levit\.gradle\caches\transforms-3\a1e946d6749f9450cfba0146caec68f9\transformed\room-runtime-2.5.1\AndroidManifest.xml:27:13-37
 336    </application>
 337
 338</manifest>

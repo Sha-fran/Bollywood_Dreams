@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.bollywood.dreacas.app-mergeDebugResources-33:/values-et/values-et.xml",
+            "outputFile": "com.bollywood.dreacas.app-mergeDebugResources-36:/values-et/values-et.xml",
             "map": [
                 {
                     "source": "C:\\Users\\levit\\.gradle\\caches\\transforms-3\\596ca88f57a539c456cbd4611af2c6c1\\transformed\\jetified-firebase-messaging-19.0.0\\res\\values-et\\values.xml",
