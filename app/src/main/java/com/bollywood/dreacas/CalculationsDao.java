@@ -1,5 +1,6 @@
 package com.bollywood.dreacas;
 
+import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
@@ -9,7 +10,10 @@ import androidx.room.Query;
 public interface CalculationsDao {
 
     @Query("SELECT balance FROM calculationData")
-    int getBalance();
+    LiveData<Integer> getBalance();
+
+    @Query("SELECT balance FROM calculationData")
+    int getBalanceInt();
 
     @Query("SELECT rate FROM calculationData")
     int getRate();

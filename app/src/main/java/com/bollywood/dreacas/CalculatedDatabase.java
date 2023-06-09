@@ -14,7 +14,7 @@ public abstract class CalculatedDatabase extends RoomDatabase {
 
     public static CalculatedDatabase getInstance(Application application) {
         if (instance == null) {
-            instance = Room.databaseBuilder(application, CalculatedDatabase.class, DB_NAME).allowMainThreadQueries().build();
+            instance = Room.databaseBuilder(application, CalculatedDatabase.class, DB_NAME).build();
         }
         return instance;
     }

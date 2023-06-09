@@ -7,17 +7,10 @@ import androidx.room.PrimaryKey;
 public class CalculationData {
 
     @PrimaryKey(autoGenerate = true)
-    private final int id;
+    private int id;
     private int balance;
     private int rate;
 
-    public void setBalance(int balance) {
-        this.balance = balance;
-    }
-
-    public void setRate(int rate) {
-        this.rate = rate;
-    }
 
     public CalculationData(int id, int balance, int rate) {
         this.id = id;
@@ -35,5 +28,17 @@ public class CalculationData {
 
     public int getRate() {
         return rate;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setBalance(Integer balance) {
+        this.balance = balance;
+    }
+
+    public void setRate(Integer rate) {
+        this.rate = rate;
     }
 }
